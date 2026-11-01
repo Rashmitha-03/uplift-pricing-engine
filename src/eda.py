@@ -1,16 +1,13 @@
 ﻿"""Quick EDA on the training split only (no peeking at calib/test)."""
 
 from pathlib import Path
-
 import duckdb
 import matplotlib
-
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 DB = "data/processed/telco.duckdb"
 OUT = Path("docs/eda")
-
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
