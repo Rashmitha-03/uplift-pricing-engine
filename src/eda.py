@@ -33,7 +33,7 @@ def main() -> None:
     plt.suptitle("")
     plt.tight_layout()
     plt.savefig(OUT / "eda_overview.png", dpi=120)
-    print(f"\nSaved {OUT / 'eda_overview.png'}")
+    print(f"\nSaved {OUT / 'eda1_overview.png'}")
 
 
 if __name__ == "__main__":
